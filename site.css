@@ -82,12 +82,17 @@ section {
 }
 
 .header-text {
-    top: -3rem;
+    top: -2rem;
     position: relative;
     background: url(./img/bg.jpeg);
     background-color: #585862;
-    /* border-radius: 3rem; */
+    border-radius: 3rem;
     padding: 0.5rem 1.5rem;
+    border-bottom: 0.1rem solid #3e3e46;
+    webkit-box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
+    -webkit-transform: translate3d(0, -0.3rem, 0);
+    color: white;
 }
 
 .table {

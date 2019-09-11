@@ -37,11 +37,11 @@ var typer = function() {
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
             typerState.currentItem = typerState.items[typerState.items.indexOf(typerState.currentItem) + 1];
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
-        }, 250); 
+        }, 1000); 
         
         setTimeout(() => { 
-            setTimeout(typer, 1000); 
-        }, 100);
+            setTimeout(typer, 900); 
+        }, 1200);
     } else {
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].textContent += '.'
@@ -49,13 +49,19 @@ var typer = function() {
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
         }, 1000); 
+
+        setTimeout(() => {
+
+        }, 500);
     }
 }
-typerState.currentItem = typerState.items[0]
-document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
 
 typerState.items.forEach(element => {
     document.getElementsByClassName(element.class)[0].innerHTML = '&nbsp'
 });
 
-typer()
+typerState.currentItem = typerState.items[0]
+document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
+setTimeout(() => {
+    typer()
+}, 1000);

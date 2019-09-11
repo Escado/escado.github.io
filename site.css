@@ -1,5 +1,5 @@
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     background: url('./img/bg.jpeg');
     background-repeat: repeat;
@@ -24,6 +24,10 @@ html {
     height: 40vh;
 }
 
+.nav-bar {
+    height: 10vh;
+}
+
 .header-container > div {
     flex: 1 0 100%;
     text-align: center;
@@ -37,7 +41,7 @@ html {
 }
 
 .piped::after {
-    content: '|';
+    content: '_';
     position: absolute;
     opacity: 0;
     animation: pipe infinite 1s;

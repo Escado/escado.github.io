@@ -1,11 +1,3 @@
-let words = [ 'Less is more.', 'Vilmantas Petrusevičius' ]
-let divs = [ 'main-text', 'subtitle-text']
-let wordIndex = 0;
-let word = words[wordIndex];
-let letterIndex = 0;
-
-let boo = true;
-
 const timeouts = {
     letterTimeout: 70,
     emptyTimeout: 4000,
@@ -17,11 +9,7 @@ let typerState = {
     items: [
         {
             class: 'main-text',
-            text: 'Less is more.'
-        },
-        {
-            class: 'subtitle-text',
-            text: 'Vilmantas Petrusevicius'
+            text: 'Lorem ipsum dolor sit'
         }
     ]
 }
@@ -49,10 +37,10 @@ var typer = function() {
     } else {
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].textContent += '.'
-        }, 500);
+        }, 1000);
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
-        }, 1000); 
+        }, 2000); 
 
         setTimeout(() => {
 

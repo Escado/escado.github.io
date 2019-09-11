@@ -27,7 +27,11 @@ let typerState = {
 }
 
 var typer = function() {
-    document.getElementsByClassName(typerState.currentItem.class)[0].textContent += typerState.currentItem.text[typerState.letterIndex];
+    if (typerState.letterIndex === 0) {
+        document.getElementsByClassName(typerState.currentItem.class)[0].textContent = document.getElementsByClassName(typerState.currentItem.class)[0].innerHTML.replace('&nbsp;', typerState.currentItem.text[typerState.letterIndex]);
+    } else {
+        document.getElementsByClassName(typerState.currentItem.class)[0].textContent += typerState.currentItem.text[typerState.letterIndex];
+    }
     typerState.letterIndex++;
     if (typerState.letterIndex < typerState.currentItem.text.length) {
         setTimeout(typer, timeouts.letterTimeout);

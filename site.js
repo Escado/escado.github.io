@@ -4,6 +4,8 @@ let wordIndex = 0;
 let word = words[wordIndex];
 let letterIndex = 0;
 
+let boo = true;
+
 const timeouts = {
     letterTimeout: 70,
     emptyTimeout: 4000,

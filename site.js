@@ -9,7 +9,7 @@ let typerState = {
     items: [
         {
             class: 'name-text',
-            text: 'Vilmantas Petrusevicius'
+            text: 'Vilmantas Petrusevičius'
         }, {
             class: 'profession-text',
             text: 'Software Developer'

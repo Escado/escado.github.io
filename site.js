@@ -8,8 +8,11 @@ let typerState = {
     currentItem: undefined,
     items: [
         {
-            class: 'main-text',
-            text: 'Lorem ipsum dolor sit'
+            class: 'name-text',
+            text: 'Vilmantas Petrusevicius'
+        }, {
+            class: 'profession-text',
+            text: 'Software Developer'
         }
     ]
 }
@@ -40,7 +43,7 @@ var typer = function() {
         }, 1000);
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
-        }, 2000); 
+        }, 1000); 
 
         setTimeout(() => {
 

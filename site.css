@@ -1,14 +1,20 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background: url('./img/bg.jpeg');
     background-repeat: repeat;
-    background-color: #eff5f9;
+    background-color: #648381;
     color: #383736;
 }
 
 body {
     margin: 0px;
+}
+
+section {
+    background: url('./img/bg.jpeg');
+    line-height: 2;
+    padding: 0 3rem;
+    padding-bottom: 15vh;
 }
 
 @keyframes pipe {
@@ -25,7 +31,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: calc(15vh + 3rem);
+    height: calc(30vh + 3rem);
     text-align: center;
 }
 
@@ -34,10 +40,9 @@ body {
 }
 
 .header-container > div {
-    flex: 1 0 50%;
+    flex: 1 0 100%;
     font-size: 3rem;
     position: relative;
-    margin: auto;
 }
 
 .header-nav {
@@ -63,32 +68,63 @@ body {
 }
 
 .technologies {
-    line-height: 2;
-    padding: 0 3rem;
-    background-color: blanchedalmond
+    background-color: #575761;
+}
+
+.projects {
+    background-color: #535C52;
 }
 
 .header {
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: calc(2rem + 1vh);
+    font-size: 2rem;
+    position: relative;
+}
+
+.header-text {
+    top: -3rem;
+    position: relative;
+    background: url(./img/bg.jpeg);
+    background-color: #585862;
+    /* border-radius: 3rem; */
+    padding: 0.5rem 1.5rem;
 }
 
 .table {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .table-item {
-    flex-grow: 1;
     border-radius: 3%;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 3rem;
+    padding: 3rem;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    transition: 0.3s
+}
+
+.table-item:hover {
+    webkit-box-shadow: 0 5px 17px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 17px 3px rgba(0,0,0,0.2);
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
 }
 
 .item-label {
     text-align: center;
     position: relative;
     margin-bottom: 2rem;
+}
+
+.item-background {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.5);
+    opacity: 0.5;
 }

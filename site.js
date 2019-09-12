@@ -43,7 +43,7 @@ var typer = function() {
         }, 1000);
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
-        }, 1000); 
+        }, 1500); 
 
         setTimeout(() => {
 

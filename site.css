@@ -146,6 +146,7 @@ section {
     height: 5rem;
     opacity: 0.5;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .item-rating {

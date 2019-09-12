@@ -119,6 +119,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: auto;
 }
 
 .table-item:hover {

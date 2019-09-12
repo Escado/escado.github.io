@@ -3,7 +3,7 @@ html {
     font-size: 16px;
     background-repeat: repeat;
     background-color: #648381;
-    color: #383736;
+    color: ghostwhite;
 }
 
 body {
@@ -90,7 +90,7 @@ section {
     border-bottom: 0.1rem solid #3e3e46;
     webkit-box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
-    color: white;
+    color: ghostwhite;
 }
 
 .projects .header-text {

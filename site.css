@@ -91,6 +91,8 @@ section {
     webkit-box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     color: ghostwhite;
+    text-decoration: none;
+    outline: none;
 }
 
 .projects .header-text {

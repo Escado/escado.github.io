@@ -190,3 +190,7 @@ section {
     opacity: 0.4;
     background-size: cover;
 }
+
+.table-item:hover.cs::before {
+    opacity: 0.1;
+}

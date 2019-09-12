@@ -14,7 +14,7 @@ section {
     background: url('./img/bg.jpeg');
     line-height: 2;
     padding: 0 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
 }
 
 @keyframes pipe {

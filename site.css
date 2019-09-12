@@ -176,3 +176,15 @@ section {
 .table-item:hover .item-icon {
     opacity: 1;
 }
+
+.table-item.cs::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: url(./img/csbg.jpg);
+    opacity: 0.4;
+    background-size: cover;
+}

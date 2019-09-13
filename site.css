@@ -137,7 +137,7 @@ a:visited {
     box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     -webkit-transform: translate3d(0, -0.3rem, 0);
     transform: translate3d(0, -0.3rem, 0);
-    filter: drop-shadow(0.3rem 0.3rem 0.3rem black);
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
 }
 
 .item-label {
@@ -262,11 +262,14 @@ a:visited {
     opacity: 1;
 }
 
-.projects .table .table-item .item-label{
-    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+.projects .table .table-item:hover .item-footer .footer-title {
+    -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: white;
+}
+
+.projects .table .table-item .item-label{
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
 }
 
 .projects .table .table-item::before {

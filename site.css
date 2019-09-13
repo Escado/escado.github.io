@@ -17,6 +17,10 @@ section {
     padding-bottom: 10rem;
 }
 
+a:visited {
+    color:inherit;
+}
+
 @keyframes pipe {
     from {
         opacity: 0
@@ -120,6 +124,8 @@ section {
     flex-direction: column;
     justify-content: center;
     overflow: auto;
+    text-decoration: none;
+    text-decoration-color: inherit;
 }
 
 .table-item:hover {
@@ -127,6 +133,7 @@ section {
     box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     -webkit-transform: translate3d(0, -0.3rem, 0);
     transform: translate3d(0, -0.3rem, 0);
+    filter: drop-shadow(0.3rem 0.3rem 0.3rem black);
 }
 
 .item-label {
@@ -169,6 +176,8 @@ section {
     margin: auto;
     opacity: 0;
     transition: 0.3s;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .table-item:hover div {
@@ -179,18 +188,88 @@ section {
     opacity: 1;
 }
 
-.table-item.cs::before {
+.table-item::before {
     content: '';
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    /* background: url(./img/csbg.jpg); */
-    opacity: 0.4;
+    opacity: 1;
+}
+
+.table-item:hover::before {
+    opacity: 0.2;
+}
+
+.table-item.zumis::before {
+    background: url('img/zumis.png');
     background-size: cover;
 }
 
-.table-item:hover.cs::before {
-    opacity: 0.1;
+.table-item.mediapark::before {
+    background: url('img/mediapark.png');
+    background-size: cover;
+}
+
+.table-item.drive-advice::before {
+    background: url('img/drive-advice.png');
+    background-size: cover;
+}
+
+.table-item.estonian-art-index::before {
+    background: url('img/estonian-art-index.png');
+    background-size: cover;
+}
+
+.table-item.espark::before {
+    background: url('img/espark.png');
+    background-size: cover;
+}
+
+.table-item.cube-browser::before {
+    background: url('img/cube-browser.png');
+    background-size: cover;
+}
+
+.table-item.mp-st::before {
+    background: url('img/mp-st.png');
+    background-size: cover;
+}
+
+.projects .table .table-item {
+    color: #eee8e8;
+    height: 20rem;
+    filter: drop-shadow(0 0 0 black);
+}
+
+.projects .table .table-item div {
+    opacity: 1;
+}
+
+.projects .table .table-item .item-footer {
+    opacity: 0;
+    z-index: 1;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projects .table .table-item:hover .item-footer {
+    opacity: 1;
+}
+
+.projects .table .table-item .item-label{
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: white;
+}
+
+.projects .table .table-item::before {
+    opacity: 0.2;
+}
+
+.footer-label {
+    display: block;
+    font-size: 50%;
 }

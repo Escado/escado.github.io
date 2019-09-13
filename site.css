@@ -17,6 +17,10 @@ section {
     padding-bottom: 10rem;
 }
 
+a {
+	color: ghostwhite;
+}
+
 a:visited {
     color: ghostwhite;
 }

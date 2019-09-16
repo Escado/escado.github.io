@@ -115,7 +115,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
     text-decoration: none;
     text-decoration-color: inherit;
 }
@@ -233,6 +233,7 @@ a:visited {
     height: 100%;
     width: 100%;
     filter: brightness(1);
+    transition: 0.3s;
 }
 
 .projects .table .table-item div {
@@ -244,7 +245,8 @@ a:visited {
 }
 
 .table-item:hover::before {
-    filter: brightness(0.4);
+    filter: brightness(0.4) blur(1px);
+    transform: scale(1.1)
 }
 
 

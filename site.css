@@ -125,8 +125,8 @@ a:visited {
     box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     -webkit-transform: translate3d(0, -0.3rem, 0);
     transform: translate3d(0, -0.3rem, 0);
-    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
 }
+
 
 .item-label {
     text-align: center;
@@ -153,6 +153,15 @@ a:visited {
     justify-content: center;
     position: relative;
 }
+
+.table-item:hover .item-rating {
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.table-item:hover .item-label {
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
 
 .yellow {
     color: #ffb300;

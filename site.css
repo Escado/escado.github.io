@@ -146,6 +146,7 @@ a:visited {
     height: 5rem;
     transition: 0.3s;
     z-index: 1;
+    opacity: 0.75;
 }
 
 .item-rating {
@@ -160,6 +161,10 @@ a:visited {
 
 .table-item:hover .item-label {
     filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.table-item:hover .item-icon {
+    opacity: 1;
 }
 
 

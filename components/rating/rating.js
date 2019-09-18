@@ -1,7 +1,8 @@
-class RatingElement extends HTMLElement {
+class ProjectElement extends HTMLElement {
     
     get style() {
         return `
+
         div {
             display: inline-block;
             transform: rotate(11deg);
@@ -59,4 +60,4 @@ class RatingElement extends HTMLElement {
     }
 }
 
-customElements.define('rating-element', RatingElement);
+customElements.define('rating-element', ProjectElement);

@@ -17,7 +17,7 @@ let typerState = {
     ]
 }
 
-var typer = function() {
+var typer = function () {
     if (typerState.letterIndex === 0) {
         document.getElementsByClassName(typerState.currentItem.class)[0].textContent = document.getElementsByClassName(typerState.currentItem.class)[0].innerHTML.replace('&nbsp;', typerState.currentItem.text[typerState.letterIndex]);
     } else {
@@ -26,16 +26,16 @@ var typer = function() {
     typerState.letterIndex++;
     if (typerState.letterIndex < typerState.currentItem.text.length) {
         setTimeout(typer, timeouts.letterTimeout);
-    } else if (typerState.currentItem !== typerState.items[typerState.items.length - 1]){
+    } else if (typerState.currentItem !== typerState.items[typerState.items.length - 1]) {
         typerState.letterIndex = 0;
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
             typerState.currentItem = typerState.items[typerState.items.indexOf(typerState.currentItem) + 1];
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
-        }, 1000); 
-        
-        setTimeout(() => { 
-            setTimeout(typer, 900); 
+        }, 1000);
+
+        setTimeout(() => {
+            setTimeout(typer, 900);
         }, 1200);
     } else {
         setTimeout(() => {
@@ -43,7 +43,7 @@ var typer = function() {
         }, 1000);
         setTimeout(() => {
             document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggle('piped');
-        }, 1500); 
+        }, 1500);
 
         setTimeout(() => {
 
@@ -60,3 +60,11 @@ document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggl
 setTimeout(() => {
     typer()
 }, 1000);
+
+var xmlHttp = new XMLHttpRequest();
+xmlHttp.onreadystatechange = function() { 
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+        console.log(xmlHttp.responseText);
+}
+xmlHttp.open("GET", 'https://i3ovudx37a.execute-api.eu-north-1.amazonaws.com/default/app-personal', true); // true for asynchronous 
+xmlHttp.send(null);

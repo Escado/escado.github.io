@@ -1,0 +1,116 @@
+:root {
+    --projects-bg: #535C52
+}
+
+.projects {
+    background-color: var(--projects-bg);
+}
+
+.projects .header-text {
+    background-color: var(--projects-bg);
+}
+
+.projects .table .table-item {
+    color: #eee8e8;
+    height: 20rem;
+    width: 14rem;
+    filter: drop-shadow(0 0 0 black);
+    color: white;
+    display: block;
+    position: relative;
+    
+}
+
+.projects .table-item::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+    filter: brightness(0.7);
+}
+
+.projects .table .table-item div {
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.projects .table .table-item .item-footer {
+    transform: translateX(14rem);
+    bottom: 0px;
+    top: unset;
+    margin: 0 0 1rem 1rem;
+}
+
+.projects .table .table-item:hover .item-footer {
+    transform: translateX(0);
+}
+
+.projects .table .table-item .item-label {
+    transform: translateX(0) translateY(-50%);
+    top:50%;
+}
+
+.projects .table .table-item:hover .item-label {
+    transform: translateX(-14rem) translateY(-50%)
+}
+
+.projects .table-item:hover::before {
+    filter: brightness(0.2);
+}
+
+
+.projects .table .table-item .item-footer {
+    z-index: 1;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.projects .table .table-item .item-label{
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.zumis::before {
+    background: url('img/zumis.png');
+    background-size: cover;
+}
+
+.mediapark::before {
+    background: url('img/mediapark.png');
+    background-size: cover;
+}
+
+.drive-advice::before {
+    background: url('img/drive-advice.png');
+    background-size: cover;
+}
+
+.estonian-art-index::before {
+    background: url('img/estonian-art-index.png');
+    background-size: cover;
+}
+
+.espark::before {
+    background: url('img/espark.png');
+    background-size: cover;
+}
+
+.cube-browser::before {
+    background: url('img/cube-browser.png');
+    background-size: cover;
+}
+
+.mp-st::before {
+    background: url('img/mp-st.png');
+    background-size: cover;
+}
+
+.footer-label {
+    display: block;
+    font-size: 50%;
+}

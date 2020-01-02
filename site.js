@@ -60,11 +60,3 @@ document.getElementsByClassName(typerState.currentItem.class)[0].classList.toggl
 setTimeout(() => {
     typer()
 }, 1000);
-
-var xmlHttp = new XMLHttpRequest();
-xmlHttp.onreadystatechange = function() { 
-    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-        console.log(xmlHttp.responseText);
-}
-xmlHttp.open("GET", 'https://i3ovudx37a.execute-api.eu-north-1.amazonaws.com/default/app-personal', true); // true for asynchronous 
-xmlHttp.send(null);

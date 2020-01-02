@@ -1,0 +1,140 @@
+
+@import url('projects.css');
+@import url('technologies.css');
+@import url('nav.css');
+
+:root {
+    --yellow: #ffb300;
+    --dark: #44330d;
+    --bg: #5f8796;
+}
+
+html {
+    font-family: Fira Code, 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-repeat: repeat;
+    color: ghostwhite;
+}
+
+body {
+    margin: 0px;
+}
+
+section {
+    line-height: 2;
+    padding: 0 3rem;
+    background: url('./img/bg.jpeg');
+    padding-bottom: 10rem;
+}
+
+a {
+	color: ghostwhite;
+}
+
+a:visited {
+    color: ghostwhite;
+}
+
+@keyframes pipe {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: var(--bg);
+    padding-top: 3rem;
+}
+
+.header > div {
+    flex: 1 0 100%;
+    font-size: calc(1vh + 3rem) ;
+    position: relative;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.piped::after {
+    content: '_';
+    position: absolute;
+    opacity: 0;
+    animation: pipe infinite 1s;
+    animation-direction: alternate
+}
+
+.section-header {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.header-text {
+    top: -2rem;
+    position: relative;
+    background: url(./img/bg.jpeg);
+    background-color: #585862;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border-bottom: 0.1rem solid #3e3e46;
+    color: ghostwhite;
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px 1px rgba(255, 255, 255, 0.0);
+}
+
+.header-text span {
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-item {
+    border-radius: 3%;
+    margin: 2rem 2.5rem;
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 0.3rem 0.3rem 0.018rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.3rem 0.3rem 0.018rem rgba(0,0,0,0.2);
+    background-color: #0000000a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+    text-decoration-color: inherit;
+}
+
+.table-item:hover {
+    -webkit-box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
+    -webkit-transform: translate3d(0, -0.3rem, 0);
+    transform: translate3d(0, -0.3rem, 0);
+}
+
+.table-item div {
+    font-size: 1.5rem;
+    margin: auto;
+    opacity: 1;
+    transition: 0.3s;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.item-label {
+    text-align: center;
+    position: relative;
+}

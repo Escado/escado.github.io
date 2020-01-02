@@ -5,7 +5,6 @@ class ProjectElement extends HTMLElement {
 
         div {
             display: inline-block;
-            transform: rotate(11deg);
         }
         
         .yellow {

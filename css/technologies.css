@@ -1,0 +1,53 @@
+:root {
+    --technologies-bg: #648381
+}
+
+.technologies {
+    background-color: var(--technologies-bg);
+}
+
+.technologies .header-text {
+    background-color: var(--technologies-bg);
+}
+
+.technologies .table-item {
+    margin: 2rem 2.5rem;
+    transition: 0s;
+    -webkit-box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.2), -2px -2px 1px 1px rgba(255, 255, 255, 0.09);
+    box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.2), -2px -2px 1px 1px rgba(255, 255, 255, 0.09);
+    background-color: inherit;
+}
+
+.technologies .table-item:hover {
+    box-shadow: inset 2px 2px 1px 1px rgba(0,0,0,0.2), 2px 2px 1px 1px rgba(255, 255, 255, 0.09);
+    -webkit-box-shadow: inset 2px 2px 1px 1px rgba(0,0,0,0.2), 2px 2px 1px 1px rgba(255, 255, 255, 0.09);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background-color: #0000000a;
+    filter: brightness(0.8);
+}
+
+.technologies .table-item .item-icon {
+    height: 5rem;
+}
+
+.technologies .table-item .item-rating {
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.technologies .table-item .item-label {
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+    text-align: center;
+    position: relative;
+}
+
+.yellow {
+    color: #ffb300;
+}
+
+.dark {
+    color: #44330d;
+}

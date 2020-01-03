@@ -106,7 +106,6 @@ a:visited {
     width: 14rem;
     height: 14rem;
     position: relative;
-    transition: 0.3s;
     -webkit-box-shadow: 0 0.3rem 0.3rem 0.018rem rgba(0,0,0,0.2);
     box-shadow: 0 0.3rem 0.3rem 0.018rem rgba(0,0,0,0.2);
     background-color: #0000000a;
@@ -122,7 +121,7 @@ a:visited {
     -webkit-box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     box-shadow: 0 0.3rem 1rem 0.18rem rgba(0,0,0,0.2);
     -webkit-transform: translate3d(0, -0.3rem, 0);
-    transform: translate3d(0, -0.3rem, 0);
+    transform: translate3d(0, -0.7rem, 0);
 }
 
 .table-item div {

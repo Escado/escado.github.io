@@ -1,5 +1,6 @@
 :root {
-    --projects-bg: #535C52
+    --projects-bg: #535C52;
+    --transition: 0.5s;
 }
 
 .projects {
@@ -18,8 +19,16 @@
     color: white;
     display: block;
     position: relative;
+    transition: var(--transition);
     
 }
+
+/* .projects .table-item:hover {
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, -0.3rem, 0);
+} */
 
 .projects .table-item::before {
     content: '';
@@ -32,23 +41,29 @@
     filter: brightness(0.7);
 }
 
-.projects .table .table-item div {
+.projects .table .table-item > div {
     opacity: 1;
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     margin: 0;
+    transition: var(--transition);
 }
 
-.projects .table .table-item .item-footer {
-    transform: translateX(14rem);
-    bottom: 0px;
-    top: unset;
-    margin: 0 0 1rem 1rem;
+.projects .table .table-item .item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-15rem);
+    height: 100%;
 }
 
-.projects .table .table-item:hover .item-footer {
+.projects .table .table-item .item-info div {
+    margin-top: 1rem
+}
+
+.projects .table .table-item:hover .item-info {
     transform: translateX(0);
 }
 
@@ -58,7 +73,7 @@
 }
 
 .projects .table .table-item:hover .item-label {
-    transform: translateX(-14rem) translateY(-50%)
+    transform: translateX(15rem) translateY(-50%)
 }
 
 .projects .table-item:hover::before {
@@ -66,7 +81,7 @@
 }
 
 
-.projects .table .table-item .item-footer {
+.projects .table .table-item .item-info {
     z-index: 1;
     filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
 }
@@ -110,7 +125,17 @@
     background-size: cover;
 }
 
-.footer-label {
+.projects .item-footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.5rem;
+}
+
+.projects .footer-label {
     display: block;
     font-size: 50%;
+}
+
+.projects .item-description {
+    font-size: 75%;
 }

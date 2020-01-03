@@ -27,6 +27,18 @@
     filter: brightness(0.8);
 }
 
+.technologies .table-item  div {
+    transition: 0s;
+}
+
+.technologies .table-item:hover  div {
+    transform: translateX(2px) translateY(2px)
+}
+
+.technologies .table-item:hover  img {
+    transform: translateX(2px) translateY(2px)
+}
+
 .technologies .table-item .item-icon {
     height: 5rem;
 }

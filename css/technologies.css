@@ -13,14 +13,14 @@
 .technologies .table-item {
     margin: 2rem 2.5rem;
     transition: 0s;
-    -webkit-box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.2), -2px -2px 1px 1px rgba(255, 255, 255, 0.09);
-    box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.2), -2px -2px 1px 1px rgba(255, 255, 255, 0.09);
+    -webkit-box-shadow: 2px 2px 1px 1px rgba(27, 25, 25, 0.22), -2px -2px 1px 1px rgba(255, 255, 255, 0.09);
+    box-shadow: 2px 2px 1px 1px rgba(27, 25, 25, 0.22), -2px -2px 1px 1px rgba(255, 255, 255, 0.09);
     background-color: inherit;
 }
 
 .technologies .table-item:hover {
-    box-shadow: inset 2px 2px 1px 1px rgba(0,0,0,0.2), 2px 2px 1px 1px rgba(255, 255, 255, 0.09);
-    -webkit-box-shadow: inset 2px 2px 1px 1px rgba(0,0,0,0.2), 2px 2px 1px 1px rgba(255, 255, 255, 0.09);
+    box-shadow: inset 2px 2px 1px 1px rgba(27, 25, 25, 0.22), 2px 2px 1px 1px rgba(255, 255, 255, 0.09);
+    -webkit-box-shadow: inset 2px 2px 1px 1px rgba(27, 25, 25, 0.22), 2px 2px 1px 1px rgba(255, 255, 255, 0.09);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     background-color: #0000000a;

@@ -23,13 +23,6 @@
     
 }
 
-/* .projects .table-item:hover {
-    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
-    box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, -0.3rem, 0);
-} */
-
 .projects .table-item::before {
     content: '';
     position: absolute;

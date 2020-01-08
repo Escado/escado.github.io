@@ -12,18 +12,6 @@
 
 .technologies .table-item {
     margin: 2rem 2.5rem;
-    transition: 0s;
-    -webkit-box-shadow: 5px 5px 14px rgba(77, 95, 93, 0.5), -5px -5px 14px rgba(255, 255, 255, 0.09);
-    box-shadow: 5px 5px 14px rgba(77, 95, 93, 0.5), -5px -5px 14px rgba(255, 255, 255, 0.09);
-    background-color: inherit;
-}
-
-.technologies .table-item:hover {
-    -webkit-box-shadow: 5px 5px 14px rgba(77, 95, 93, 0.5), -5px -5px 14px rgba(255, 255, 255, 0.09);
-    box-shadow: 5px 5px 14px rgba(77, 95, 93, 0.5), -5px -5px 14px rgba(255, 255, 255, 0.09);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    background-color: #0000000a;
 }
 
 .technologies .table-item:hover {

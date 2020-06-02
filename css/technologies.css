@@ -15,7 +15,7 @@
 }
 
 .technologies .table-item:hover {
-    filter: brightness(0.8);
+    background: #ffffff08;
 }
 
 .technologies .table-item .item-icon {
